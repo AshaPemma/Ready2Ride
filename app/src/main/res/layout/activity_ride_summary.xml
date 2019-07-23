@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/rl_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_65"
+    android:background="@color/colorDarkBlue">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_share" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:text="Ride Summary"
+        android:fontFamily="@font/arialbd"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_16" />
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/rl_toolbar"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_height="0dp"
+        android:layout_weight="0.43"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.57"
+        android:background="@color/colorWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RideLog"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:id="@+id/tv_ride_logs"
+            android:fontFamily="@font/arialbd"
+            android:textColor="@color/colorBlack"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_130"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_below="@+id/ll_headings"
+            android:id="@+id/rv_ride_log"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_ride_logs"
+            android:id="@+id/ll_headings"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_10"
+                android:fontFamily="@font/arialbd"
+                android:text="Log"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_10"
+                android:fontFamily="@font/arialbd"
+                android:text="Avg"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_10"
+                android:fontFamily="@font/arialbd"
+                android:text="Top"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_10"
+                android:fontFamily="@font/arialbd"
+                android:text="Time"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_10"
+                android:fontFamily="@font/arialbd"
+                android:text="Distance"/>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:background="@drawable/ic_rectangle_blue_btn_bg"
+            android:text="Save Ride"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:textStyle="bold"
+            android:id="@+id/btn_save_ride"
+            android:fontFamily="@font/arial"
+            android:textAllCaps="false"
+            android:layout_below="@+id/rv_ride_log"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discard"
+            android:id="@+id/tv_discard"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_save_ride"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:fontFamily="@font/arialbd"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_14"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+</RelativeLayout>

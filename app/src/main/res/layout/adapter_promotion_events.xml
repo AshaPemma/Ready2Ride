@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_30"
+        android:id="@+id/iv_home"
+        android:src="@drawable/ic_featured_groups_bg"
+        android:layout_marginTop="@dimen/dimen_18" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_text"
+        android:layout_toRightOf="@+id/iv_home"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patric Hodge"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_name"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loreum ipusm its a decsription and we have to"
+            android:id="@+id/tv_name_desc"
+            android:textSize="10dp"
+            android:fontFamily="@font/arial"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:maxLines="2"
+            android:layout_below="@+id/tv_name"
+            android:textColor="@color/colorBlack"/>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/rl_text"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:background=" #CCCCCC"></View>
+
+</RelativeLayout>

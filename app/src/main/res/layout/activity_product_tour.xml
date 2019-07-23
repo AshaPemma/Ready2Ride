@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBlue">
+    <include layout="@layout/activity_toolbar"
+        android:id="@+id/rl_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Tour"
+        android:textSize="28sp"
+        android:id="@+id/tv_product_tour"
+        android:textStyle="bold"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/tv_skip_desc"
+        android:textSize="@dimen/text_size_12"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:fontFamily="@font/arial"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_below="@+id/tv_product_tour"
+        android:text="This is a product tour. You can skip ahead a step by tapping 'Skip' in the top right. Don't worry, you'll be able to do these things later. "/>
+
+    <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="   User Registration"-->
+        <!--android:layout_marginLeft="@dimen/dimen_65"-->
+        <!--android:id="@+id/rb_user_registration"-->
+        <!--android:layout_below="@+id/tv_skip_desc"-->
+        <!--android:layout_marginTop="@dimen/dimen_15"-->
+        <!--android:textSize="@dimen/text_size_20"-->
+        <!--android:textColor="@color/colorWhite"/>-->
+
+    <!--<View-->
+        <!--android:id="@+id/view1"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_below="@+id/rb_user_registration"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_marginTop="-5dp"-->
+        <!--android:background="@color/colorWhite"/>-->
+
+    <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="   Garage"-->
+        <!--android:layout_marginLeft="@dimen/dimen_65"-->
+        <!--android:id="@+id/rb_garage"-->
+        <!--android:layout_below="@+id/view1"-->
+        <!--android:layout_marginTop="-5dp"-->
+        <!--android:textSize="@dimen/text_size_20"-->
+        <!--android:textColor="@color/colorWhite"/>-->
+
+    <!--<View-->
+        <!--android:id="@+id/view2"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_below="@+id/rb_garage"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_marginTop="-5dp"-->
+        <!--android:background="@color/colorWhite"/>-->
+    <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="   Dealership"-->
+        <!--android:layout_marginLeft="@dimen/dimen_65"-->
+        <!--android:id="@+id/rb_dealer_ship"-->
+        <!--android:layout_below="@+id/view2"-->
+        <!--android:layout_marginTop="-5dp"-->
+        <!--android:textSize="@dimen/text_size_20"-->
+        <!--android:textColor="@color/colorWhite"/>-->
+
+    <!--<View-->
+        <!--android:id="@+id/view3"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_below="@+id/rb_dealer_ship"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_marginTop="-5dp"-->
+        <!--android:background="@color/colorWhite"/>-->
+
+    <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="   Discover /Find Buddies"-->
+        <!--android:layout_marginLeft="@dimen/dimen_65"-->
+        <!--android:id="@+id/rb_discover"-->
+        <!--android:layout_below="@+id/view3"-->
+        <!--android:layout_marginTop="-5dp"-->
+        <!--android:textSize="@dimen/text_size_20"-->
+        <!--android:textColor="@color/colorWhite"/>-->
+
+    <!--<View-->
+        <!--android:id="@+id/view4"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_below="@+id/rb_discover"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_marginTop="-5dp"-->
+        <!--android:background="@color/colorWhite"/>-->
+    <!--<RadioButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="   Start Tracking"-->
+        <!--android:layout_marginLeft="@dimen/dimen_65"-->
+        <!--android:id="@+id/rb_start_track"-->
+        <!--android:layout_below="@+id/view4"-->
+        <!--android:layout_marginTop="-5dp"-->
+        <!--android:textSize="@dimen/text_size_20"-->
+        <!--android:textColor="@color/colorWhite"/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_product_tour_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_skip_desc"
+        android:layout_marginTop="@dimen/dimen_40"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_start"
+        android:text="Start"
+        android:textStyle="bold"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:background="#414A66"/>
+</RelativeLayout>

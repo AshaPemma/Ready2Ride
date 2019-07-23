@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_member_bg"
+    android:layout_marginRight="@dimen/dimen_4"
+    android:layout_marginLeft="@dimen/dimen_4">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_default_profile"
+        android:id="@+id/iv_prfl"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_prfl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Jack"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_10"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dolby"
+        android:fontFamily="@font/arial"
+        android:layout_below="@+id/tv_fname"
+        android:id="@+id/tv_lname"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_10"/>
+
+
+
+
+</RelativeLayout>

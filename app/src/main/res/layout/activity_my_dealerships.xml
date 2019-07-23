@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:background="@color/colorDarkBlue">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:id="@+id/iv_back"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="My Dealerships"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Dealerships"
+        android:textSize="@dimen/text_size_10"
+        android:id="@+id/tv_selected_dealerships"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_below="@+id/tv_selected_dealerships">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:id="@+id/rv_selected_dealerships"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_below="@+id/tv_my_dealers"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10">
+    </android.support.v7.widget.RecyclerView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_find_dealershp"
+            android:background="@drawable/ic_rectangle_blue_btn_bg"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:fontFamily="@font/arial"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="Find a Dealership"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DealerShips"
+            android:id="@+id/tv_my_dealers"
+            android:layout_below="@+id/rv_selected_dealerships"
+            android:textSize="@dimen/text_size_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_15"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:id="@+id/rv_my_dealerships"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_below="@+id/tv_selected_dealerships"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

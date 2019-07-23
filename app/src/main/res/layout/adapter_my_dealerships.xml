@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_30"
+        android:id="@+id/iv_home"
+        android:src="@drawable/ic_featured_groups_bg"
+        android:layout_marginTop="@dimen/dimen_18"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_home"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brooklyn Indian Motorcycles"
+            android:id="@+id/tv_name"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="124 Varic St. Brooklyn, NY 10012"
+            android:id="@+id/tv_name_desc"
+            android:textSize="10dp"
+            android:fontFamily="@font/arial"
+            android:layout_below="@+id/tv_name"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/cb_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dimen_10"
+            android:text="Add"
+            android:visibility="gone"
+            android:textColor="@color/colorDarkBlue"
+            android:fontFamily="@font/arialbd"
+            android:backgroundTint="@color/colorBlack"
+            android:layout_marginTop="@dimen/dimen_15"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_name_desc"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:background=" #CCCCCC"></View>
+    </RelativeLayout>
+
+
+</RelativeLayout>

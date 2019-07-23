@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_default_profile"
+        android:id="@+id/iv_prfl"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nick Kolchev"
+        android:id="@+id/tv_name"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/iv_prfl"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:fontFamily="@font/arial"
+        android:layout_marginLeft="@dimen/dimen_10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hour"
+        android:layout_toRightOf="@+id/tv_name"
+        android:text="1h"
+        android:fontFamily="@font/arial"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:textColor="#9B9B9B"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_msg_bg"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/arial"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:text="12"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_10"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group ride all set for this Friday!"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tv_group_ride"
+        android:layout_below="@+id/iv_prfl"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textSize="@dimen/text_size_12"
+        android:fontFamily="@font/arial"
+        android:layout_marginLeft="@dimen/dimen_15"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_group_ride"
+        android:id="@+id/tv_ride_desc"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:fontFamily="@font/arial"
+        android:text="@string/lorem_ipsum"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:id="@+id/iv_discsn_bg"
+        android:src="@drawable/ic_discussion_bg"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_below="@+id/tv_ride_desc"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/iv_discsn_bg"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:background=" #CCCCCC"></View>
+
+</RelativeLayout>

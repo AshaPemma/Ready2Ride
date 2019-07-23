@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDarkBlue"
+    android:minHeight="@dimen/dimen_75"
+    app:theme="@style/ThemeOverlay.AppCompat"
+    app:titleTextColor="@color/colorWhite">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_back"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:id="@+id/tv_header"
+            android:fontFamily="@font/arial"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_22"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_skip_tour"
+            android:fontFamily="@font/arial"
+            android:text="Skip Tour"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

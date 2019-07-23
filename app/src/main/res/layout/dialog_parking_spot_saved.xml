@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_48"
+    android:paddingBottom="@dimen/dimen_20"
+    android:background="@color/colorWhite">
+    <ImageView
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"
+        android:src="@drawable/ic_cross"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:id="@+id/iv_cross"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking Spot Saved"
+        android:fontFamily="@font/arialbd"
+        android:id="@+id/tv_ride_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_18"/>
+
+    <View
+        android:id="@+id/path_3"
+        android:layout_width="1dp"
+        android:layout_height="220dp"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_ride_name"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="#E4E4E4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ride_name"
+        android:id="@+id/ll_first_half"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_note"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_add_note"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Notes"
+                android:textColor="#7895B6"
+                android:fontFamily="@font/arial"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_below="@+id/iv_note"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_share"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_share_blue"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="#7895B6"
+                android:fontFamily="@font/arial"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_below="@+id/iv_share"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/path_4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_first_half"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="#E4E4E4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/path_4"
+        android:id="@+id/ll_secon_half"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_camera"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_camera_blue"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take a pic"
+                android:textColor="#7895B6"
+                android:fontFamily="@font/arial"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_below="@+id/iv_camera"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_unmark_spot"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_unmark_spot"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unmark Spot"
+                android:textColor="#7895B6"
+                android:fontFamily="@font/arial"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_below="@+id/iv_unmark_spot"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

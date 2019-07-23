@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:id="@+id/iv_home"
+        android:src="@drawable/ic_oval_photo"
+        android:layout_marginTop="@dimen/dimen_15"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_home"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_name"
+            android:layout_marginTop="6dp"
+            android:textColor="#7895B6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_desc"
+            android:fontFamily="@font/arial"
+            android:layout_below="@+id/tv_name"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1h"
+            android:textColor="#9B9B9B"
+            android:id="@+id/tv_hour"
+            android:fontFamily="@font/arial"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="@dimen/dimen_3"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_desc"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background=" #CCCCCC"></View>
+    </RelativeLayout>
+
+</RelativeLayout>

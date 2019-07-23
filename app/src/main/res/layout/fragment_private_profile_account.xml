@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_dealership_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/ic_private_cover_bg" />
+    <RelativeLayout
+        android:id="@+id/rl_dealer_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_dealership_bg"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/ic_private_bg"
+        android:layout_marginRight="@dimen/dimen_10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_fname"
+            android:text="Fname Lname"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="@dimen/dimen_48"
+            android:textColor="@color/colorBlack"/>
+        <RelativeLayout
+            android:id="@+id/rl_bike_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fname"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rides"
+                android:fontFamily="@font/arial"
+                android:id="@+id/tv_rides"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_18"
+                android:textColor="#9B9B9B"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miles Ridden"
+                android:fontFamily="@font/arial"
+                android:id="@+id/tv_miles_ridden"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Time"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_18"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:fontFamily="@font/arial"
+                android:layout_below="@id/tv_rides"
+                android:textStyle="bold"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.25K"
+                android:layout_below="@id/tv_rides"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textSize="@dimen/text_size_20"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04:33:55"
+                android:layout_below="@id/tv_rides"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textSize="@dimen/text_size_20"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_18"
+                android:textColor="@color/colorBlack"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_profile_private_bg"
+        android:layout_below="@id/iv_dealership_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-70dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:id="@+id/btn_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_dealer_desc"
+        android:text="Request Sent"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="-20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_private"
+        android:fontFamily="@font/arial"
+        android:layout_below="@id/btn_edit"
+        android:layout_centerHorizontal="true"
+        android:text="This user is private"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:textColor="#9B9B9B"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_key"
+        android:layout_below="@+id/tv_private"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

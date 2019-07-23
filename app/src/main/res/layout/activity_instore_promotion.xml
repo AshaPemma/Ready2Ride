@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:background="@color/colorDarkBlue">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:id="@+id/iv_back"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:fontFamily="@font/arial"
+            android:text="In-store Promotion"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_toolbar">
+
+            <ImageView
+                android:id="@+id/iv_instore_bg"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/ic_instore_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_instore_bg"
+                android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tv_ascesory_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/arial"
+                android:text="Fall Accessory Sale"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_off_ascsry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ascesory_heading"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:gravity="center_horizontal"
+                android:text="Get 20% off all accessories"
+                android:fontFamily="@font/arial"
+                android:textColor="#9B9B9B" />
+
+            <TextView
+                android:id="@+id/tv_offer_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_off_ascsry"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:fontFamily="@font/arial"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:gravity="center_horizontal"
+                android:text="@string/offer_desc"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:id="@+id/iv_scanner_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_offer_desc"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_scannerbg" />
+
+            <ImageView
+                android:id="@+id/iv_bar_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_scanner_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:visibility="gone"
+                android:src="@drawable/iv_barcode" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7895B6"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:text="Save to Wallet"
+                android:fontFamily="@font/arial"
+                android:textAllCaps="false"
+                android:id="@+id/btn_save_to_wallet"
+                android:layout_below="@+id/iv_bar_code"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:textColor="@color/colorWhite"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

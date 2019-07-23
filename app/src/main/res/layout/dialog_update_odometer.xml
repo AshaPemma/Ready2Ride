@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_48"
+    android:paddingBottom="@dimen/dimen_20"
+    android:paddingTop="@dimen/dimen_8"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"
+        android:src="@drawable/ic_cross"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:id="@+id/iv_cross"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Odometer?"
+        android:fontFamily="@font/arialbd"
+        android:layout_below="@+id/iv_cross"
+        android:id="@+id/tv_update_odometer"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:textSize="@dimen/text_size_16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_text_saved"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_below="@+id/tv_update_odometer"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/arial"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/colorBlack"
+        android:text="@string/this_is_you"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_below="@+id/tv_text_saved"
+        android:background="@drawable/ic_updte_om_edit"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:fontFamily="@font/digital"
+        android:id="@+id/et_ride_name"
+        android:inputType="number"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:textSize="@dimen/text_size_12"
+        android:layout_centerHorizontal="true"
+        android:hint="Odometer Reading"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Save"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:textStyle="bold"
+        android:id="@+id/btn_save"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:layout_below="@+id/et_ride_name"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_ask_m"
+        android:layout_below="@+id/btn_save"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_dont_ask"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_12"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:textColor="#7895B6"/>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_48"
+    android:paddingBottom="@dimen/dimen_20"
+    android:paddingTop="@dimen/dimen_8"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"
+        android:src="@drawable/ic_cross"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:id="@+id/iv_cross"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/odometer_up"
+        android:fontFamily="@font/arialbd"
+        android:layout_below="@+id/iv_cross"
+        android:id="@+id/tv_update_odometer"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:textSize="@dimen/text_size_16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_text_saved"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_below="@+id/tv_update_odometer"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/arial"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/colorBlack"
+        android:text="@string/you_can_opt"/>
+
+
+</RelativeLayout>

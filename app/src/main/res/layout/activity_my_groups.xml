@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:id="@+id/rl_toolbar"
+        android:background="@color/colorDarkBlue">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:text="Search Groups"
+            android:textSize="@dimen/text_size_12"
+            android:fontFamily="@font/arial"
+            android:layout_toRightOf="@+id/iv_back"
+            android:id="@+id/et_search"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="@dimen/dimen_10"
+            android:background="@drawable/ic_blue_search_edit"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Create Group"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:id="@+id/btn_create_group"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Groups"
+        android:fontFamily="@font/arial"
+        android:id="@+id/tv_my_groups"
+        android:textColor="#9B9B9B"
+        android:textSize="@dimen/text_size_10"
+        android:layout_below="@+id/btn_create_group"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_my_groups">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/rv_bike_items"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_below="@+id/tv_my_groups"
+            android:layout_marginTop="@dimen/dimen_5"></android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Featured Groups"
+                android:textSize="@dimen/text_size_10"
+                android:fontFamily="@font/arial"
+                android:id="@+id/tv_featured_groups"
+                android:textColor="#9B9B9B"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginLeft="@dimen/dimen_15"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_featured_groups"
+                android:id="@+id/rv_featured_groups"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_15"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_featured_groups"
+                android:id="@+id/tv_no_featured_groups"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/colorBlack"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:text="No Featured Groups"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

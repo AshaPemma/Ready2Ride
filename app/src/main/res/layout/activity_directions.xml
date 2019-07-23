@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:background="@color/colorDarkBlue"
+        android:id="@+id/rl_toolbar">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route Map"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_toolbar"/>
+
+
+</RelativeLayout>

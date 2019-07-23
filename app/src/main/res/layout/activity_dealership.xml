@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_dealership"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_above="@+id/navigationView"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_bike"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_above="@+id/navigationView"/>
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:visibility="gone"
+        android:background="@color/colorDarkBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="DealerShip"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_above="@+id/ll_navigation"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_default_bike"
+        android:visibility="gone">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_bike"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/arial"
+        android:id="@+id/tv_header"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_48"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_home_bike"
+        android:layout_below="@+id/tv_header"
+        android:id="@+id/iv_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_16"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_create_bike"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Create a Bike Profile"
+        android:layout_below="@+id/iv_home"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_default_dealer"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_have_no"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_headerd"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_48"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_home_bike"
+            android:layout_below="@+id/tv_headerd"
+            android:id="@+id/iv_homed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_16"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_create_biked"
+            android:background="@drawable/ic_rectangle_blue_btn_bg"
+            android:text="Set Default Dealer"
+            android:layout_below="@+id/iv_homed"
+            android:fontFamily="@font/arial"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+    <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/navigationView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="0dp"-->
+        <!--android:layout_marginStart="0dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--app:itemTextColor="@color/colorWhite"-->
+        <!--app:itemIconTint="@drawable/bottom_navigation_selector"-->
+        <!--app:menu="@menu/activity_main_drawer"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:id="@+id/ll_navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/iv_homme"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_home_light"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/iv_bike"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_bike_light"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/iv_road_track"
+            android:layout_height="wrap_content"
+            android:src="@drawable/road_track"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/iv_store"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_store_light"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_profile_image"
+            android:src="@drawable/ic_default_profile"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

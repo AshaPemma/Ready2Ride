@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="1">-->
+    <ImageView
+        android:id="@+id/iv_dealership_bg"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/ic_dealership_background" />
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="0.7">-->
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:id="@+id/rl_dealer_desc"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@+id/iv_dealership_bg"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:background="@drawable/ic_background_dealershp_details">
+
+        <TextView
+            android:id="@+id/tv_dealer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:fontFamily="@font/arial"
+            android:gravity="center_horizontal"
+            android:text="Brooklyn Indain MotorCycle"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/rv_dots"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_dealer_name">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/tv_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_dots"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:text="Address"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="-15dp"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_adress_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_adress"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:text="123 MainSl"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_adress_desc"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="Phone"
+            android:fontFamily="@font/arial"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_phone_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_phone"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="(212)555-5555"
+            android:fontFamily="@font/arial"
+            android:textColor="#4A90E2"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_phone_desc"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:fontFamily="@font/arial"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="#9B9B9B"
+            android:text="Website" />
+
+        <TextView
+            android:id="@+id/tv_website_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_website"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:fontFamily="@font/arial"
+            android:text="http://websitename.com"
+            android:textColor="#4A90E2"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_dealer_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_28"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:fontFamily="@font/arial"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginRight="@dimen/dimen_28"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Send Message"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/btn_request_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_send_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_28"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_28"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Request Service"
+        android:textColor="@color/colorWhite" />
+
+
+    <TextView
+        android:id="@+id/tv_promotion_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_request_service"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:textSize="@dimen/text_size_10"
+        android:text="@string/promotion_events" />
+    <TextView
+        android:id="@+id/tv_see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_request_service"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:fontFamily="@font/arial"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:text="See all" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tv_no_prom"
+        android:fontFamily="@font/arial"
+        android:layout_below="@+id/tv_promotion_events"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_14"
+        android:layout_centerHorizontal="true"
+        android:text="No Promotions and Events"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_promotion_events"
+        android:layout_below="@+id/tv_promotion_events"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_10">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+
+    <!--</ScrollView>--><!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+

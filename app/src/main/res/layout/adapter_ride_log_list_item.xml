@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_4">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="228dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/map_view"
+            android:src="@drawable/ic_route_bg"
+            android:layout_weight="0.7"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:background="@color/colorWhite">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catskill ride"
+                android:fontFamily="@font/arialbd"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tv_bike_name"
+                android:textSize="@dimen/text_size_12"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rides"
+                android:fontFamily="@font/arial"
+                android:layout_below="@+id/tv_bike_name"
+                android:layout_centerHorizontal="true"
+                android:textColor="#9B9B9B"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:textSize="@dimen/text_size_10"
+                android:text="2/25/2019 3:05 PM"
+                android:layout_marginTop="@dimen/dimen_5"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

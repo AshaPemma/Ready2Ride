@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:background="@color/colorDarkBlue">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:id="@+id/iv_back"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="Rides"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Bikes"
+        android:fontFamily="@font/arial"
+        android:id="@+id/tv_bikes"
+        android:textColor="#9B9B9B"
+        android:visibility="gone"
+        android:layout_below="@+id/btn_create_bike_profile"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Create Bike Profile"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:id="@+id/btn_create_bike_profile"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textColor="@color/colorWhite"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_ride_log_list"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_below="@+id/tv_bikes"
+        android:layout_marginTop="@dimen/dimen_10"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Rides"
+        android:id="@+id/tv_no_bikes"
+        android:textSize="@dimen/text_size_14"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_below="@+id/btn_create_bike_profile"
+        android:gravity="center_horizontal|center"/>
+</RelativeLayout>

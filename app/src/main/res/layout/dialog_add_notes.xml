@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_48"
+    android:paddingBottom="@dimen/dimen_20"
+    android:paddingTop="@dimen/dimen_8"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"
+        android:src="@drawable/ic_cross"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:id="@+id/iv_cross"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name your Ride"
+        android:fontFamily="@font/arialbd"
+        android:layout_below="@+id/iv_cross"
+        android:id="@+id/tv_ride_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:textSize="@dimen/text_size_16"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ride_name"
+        android:background="@drawable/bg_add_notes"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_8"
+        android:id="@+id/et_ride_name"
+        android:gravity="top|left"
+        android:textColor="#9B9B9B"
+        android:textColorHint="#9B9B9B"
+        android:paddingTop="@dimen/dimen_8"
+        android:textSize="@dimen/text_size_12"
+        android:layout_centerHorizontal="true"
+        android:hint="Parking details..."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Save"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:textStyle="bold"
+        android:id="@+id/btn_save"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:layout_below="@+id/et_ride_name"
+        android:textColor="@color/colorWhite"/>
+</RelativeLayout>

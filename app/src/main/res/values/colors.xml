@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="pi_onboarding">#CCCC33</color>
+    <color name="app_theme_color">#4CB7D9</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#4B5461</color>
+    <color name="popup_color">#F1F1F1</color>
+    <color name="colorLightGrey">#E5E5E5</color>
+    <color name="colorSentEmails">#5C5C5C</color>
+    <color name="colorSentEmailsItem">#C45C5C5C</color>
+    <color name="colorSettingsTextColor">#AAAAAA</color>
+    <color name="colorblue">#415B9E</color>
+    <color name="colorDarkBlue">#323a55</color>
+    <color name="colorLightBlue">#7896b7 </color>
+    <color name="colorLightGreyEdit">#D4D4D4</color>
+    <color name="colorBlue">#568dca</color>
+    <color name="coloronboard1">#293046</color>
+    <color name="coloronboard2">#323A55</color>
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="googlemapsBlue">#4A89F3</color>
+
+
+    <item name="blue" type="color">#8756B2</item>
+    <item name="purple" type="color">#6B8C45</item>
+    <item name="green" type="color">#4A90E2</item>
+    <item name="orange" type="color">#ff2f85</item>
+    <item name="red" type="color">#ffc75d</item>
+    <item name="darkblue" type="color">#8756B2</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#6B8C45</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <integer-array name="androidcolors">
+        <item>@color/blue</item>
+        <item>@color/purple</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+    </integer-array>
+</resources>

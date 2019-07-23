@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+    <include layout="@layout/activity_toolbar"
+        android:id="@+id/rl_toolbar"/>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/rl_toolbar">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingBottom="@dimen/dimen_20">-->
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="200dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_bike"
+        android:layout_below="@+id/rl_toolbar"
+        android:background="@drawable/ic_bike_bg_white"
+        android:layout_marginTop="@dimen/dimen_10"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Picture"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_upload"
+        android:fontFamily="@font/arial"
+        android:layout_below="@+id/iv_bike"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:textColor="#414A66"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_input_bg"
+        android:layout_below="@+id/tv_upload"
+        android:id="@+id/et_bik_name"
+        android:fontFamily="@font/arial"
+        android:hint="Nickname (optional)"
+        android:textSize="@dimen/text_size_12"
+        android:paddingLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_input_bg"
+        android:layout_below="@+id/et_bik_name"
+        android:hint="VIN (optional)"
+        android:textSize="@dimen/text_size_12"
+        android:fontFamily="@font/arial"
+        android:id="@+id/et_vin"
+        android:drawableRight="@drawable/ic_camera"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"/>
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_input_bg"
+        android:layout_below="@+id/et_vin"
+        android:id="@+id/et_odometr_reading"
+        android:hint="Odometer Reading"
+        android:textSize="@dimen/text_size_12"
+        android:fontFamily="@font/arial"
+        android:maxLines="1"
+
+        android:inputType="number"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:paddingLeft="@dimen/dimen_5"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/purchase_date"
+        android:fontFamily="@font/arial"
+        android:id="@+id/tv_purchase_date"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/et_vin"
+        android:layout_toRightOf="@+id/et_odometr_reading"
+        android:layout_marginTop="@dimen/dimen_14"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_input_bg"
+        android:layout_below="@+id/et_vin"
+        android:hint="MM/DD/YYYY"
+        android:focusable="false"
+        android:drawableRight="@drawable/ic_calender"
+        android:paddingRight="@dimen/dimen_8"
+        android:layout_toRightOf="@+id/tv_purchase_date"
+        android:id="@+id/et_pdate"
+        android:fontFamily="@font/arial"
+        android:textSize="11sp"
+        android:paddingLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:id="@+id/rl_year"
+        android:background="@drawable/ic_months_bg"
+        android:layout_below="@+id/et_pdate"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginBottom="7dp"  >
+        <Spinner
+            android:id="@+id/spiner_year"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/dimen_15"
+            android:fontFamily="@font/arial"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_15"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_traingle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_18"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:id="@+id/rl_make"
+            android:background="@drawable/ic_months_bg"
+            android:layout_below="@+id/rl_year"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginBottom="7dp"  >
+        <Spinner
+            android:id="@+id/spiner_make"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/dimen_15"
+            android:fontFamily="@font/arial"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_15"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_traingle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_18"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:id="@+id/rl_model"
+        android:background="@drawable/ic_months_bg"
+        android:layout_below="@+id/rl_make"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginBottom="7dp"  >
+        <Spinner
+            android:id="@+id/spiner_model"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/dimen_15"
+            android:fontFamily="@font/arial"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_15"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_traingle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_18"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentBottom="true"
+        android:background="#414A66"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:fontFamily="@font/arial"
+        android:id="@+id/btn_next"
+        android:textColor="@color/colorWhite"/>
+
+        <!--</RelativeLayout>-->
+
+
+    <!--</ScrollView>-->
+</RelativeLayout>

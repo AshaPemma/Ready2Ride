@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:background="@color/colorDarkBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:id="@+id/tv_cancel"
+            android:text="Cancel"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="Create New Alert"
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:id="@+id/rl_model"
+        android:background="@drawable/ic_months_bg"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginBottom="7dp"  >
+    <Spinner
+        android:id="@+id/spiner_model"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:background="@color/colorWhite"
+        android:paddingLeft="@dimen/dimen_10"
+        android:fontFamily="@font/arial"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingBottom="7dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_traingle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_18"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_model"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="By:"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/colorBlack" />
+
+    <RadioGroup
+        android:id="@+id/rg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_model"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_toRightOf="@+id/tv_by"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_time"
+            android:checked="true"
+            android:fontFamily="@font/arial"
+            android:text="Time" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:id="@+id/rb_mileage"
+            android:fontFamily="@font/arial"
+            android:text="Mileage" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_last_serviced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_time"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:fontFamily="@font/arial"
+        android:text="@string/last_serviced"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/et_pdate"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rg_time"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_toRightOf="@+id/tv_last_serviced"
+        android:background="@drawable/ic_input_bg"
+        android:drawableRight="@drawable/ic_calender"
+        android:paddingLeft="@dimen/dimen_5"
+        android:textSize="@dimen/text_size_14"
+        android:focusable="false"
+        android:fontFamily="@font/arial"
+        android:paddingRight="@dimen/dimen_8"
+        android:hint="MM/DD/YYYY" />
+
+    <EditText
+        android:id="@+id/et_miles"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rg_time"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_toRightOf="@+id/tv_last_serviced"
+        android:background="@drawable/ic_input_bg"
+        android:paddingLeft="@dimen/dimen_5"
+        android:fontFamily="@font/arial"
+        android:paddingRight="@dimen/dimen_8"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/et_miles"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/rg_time"
+        android:id="@+id/tv_miles"
+        android:text="miles"
+        android:fontFamily="@font/arial"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_24"/>
+
+    <TextView
+        android:id="@+id/tv_every"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pdate"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:text="Every:"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tv_everym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_miles"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:visibility="gone"
+        android:layout_marginTop="25dp"
+        android:text="Every:"
+        android:textStyle="bold"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@+id/et_pdate"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:fontFamily="@font/arial"
+        android:layout_toRightOf="@+id/tv_every"
+        android:background="@drawable/ic_month_num"
+        android:gravity="center"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/et_numm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@+id/et_miles"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:visibility="gone"
+        android:fontFamily="@font/arial"
+        android:layout_toRightOf="@+id/tv_everym"
+        android:background="@drawable/ic_month_num"
+        android:gravity="center"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/et_numm"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/arial"
+        android:layout_below="@+id/et_miles"
+        android:id="@+id/tv_miles1"
+        android:text="miles"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_24"/>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/rl_months"
+        android:layout_below="@+id/et_pdate"
+        android:layout_toRightOf="@+id/et_num"
+        android:background="@drawable/ic_months_bg"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginBottom="7dp">
+
+
+
+    <Spinner
+        android:id="@+id/spiner_months"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/colorWhite"
+        android:paddingLeft="@dimen/dimen_10"
+        android:fontFamily="@font/arial"
+        android:paddingRight="@dimen/dimen_10"
+        android:layout_marginBottom="7dp"
+      />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_traingle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_18"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_num"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="22dp"
+        android:text="Reminder:"
+        android:textStyle="bold"
+
+        android:fontFamily="@font/arial"
+        android:textColor="@color/colorBlack" />
+    <TextView
+        android:id="@+id/tv_reminderm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_numm"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="22dp"
+        android:text="Reminder:"
+        android:textStyle="bold"
+        android:fontFamily="@font/arial"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack" />
+
+
+    <RelativeLayout
+        android:layout_width="158dp"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@+id/et_numm"
+        android:visibility="gone"
+        android:id="@+id/rl_weekem"
+        android:layout_toRightOf="@+id/tv_reminderm"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/ic_months_bg">
+
+        <Spinner
+            android:id="@+id/spiner_weekm"
+            android:layout_width="148dp"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:fontFamily="@font/arial"
+            android:background="@color/colorWhite"
+            android:layout_height="@dimen/dimen_40"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_traingle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_18"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="148dp"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@+id/et_num"
+        android:layout_toRightOf="@+id/tv_reminder"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:id="@+id/rl_week"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/ic_months_bg">
+
+        <Spinner
+            android:id="@+id/spiner_week"
+            android:layout_width="148dp"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/arial"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_traingle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+           android:layout_marginTop="@dimen/dimen_18"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_save"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/colorWhite" />
+
+
+</RelativeLayout>
+

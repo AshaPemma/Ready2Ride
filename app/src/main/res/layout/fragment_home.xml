@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_dealership"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_header"
+        android:fontFamily="@font/arial"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_48"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_home_navigation"
+        android:layout_below="@+id/tv_header"
+        android:id="@+id/iv_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_16"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Link my Dealership"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:id="@+id/btn_link_my_dealer"
+        android:layout_below="@+id/iv_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

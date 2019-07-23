@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'io.fabric'
+
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    google()
+}
+
+
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.warrous.ready2ride"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true;
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+def FrescoVersion = '1.5.0'
+def GsonVersion = '2.8.1'
+def RetrofitVersion = '2.3.0'
+def OkhttpLogVersion = '3.6.0'
+
+def eventbus = '3.1.1'
+def daggerVersion = '2.16'
+
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('libs/volley.jar')
+    implementation files('libs/httpmime-4.1.3.jar')
+    implementation files('libs/gdata-client-1.0')
+    implementation files('libs/gdata-contacts-3.0')
+    implementation files('libs/gdata-core-1.0')
+    implementation files('libs/guava-11.0.2')
+//       implementation files('signpost-commonshttp4-1.2.1.1')
+//   implementation files(' signpost-core-1.2.1.1')
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.squareup.okhttp:okhttp:2.6.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+//    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "com.jakewharton:butterknife:$rootProject.ext.butterNife"
+    implementation "com.facebook.fresco:fresco:$FrescoVersion"
+//    implementation 'com.facebook.android:facebook-login:[5,6)'
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.0'
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterNife"
+    implementation "com.squareup.okhttp3:logging-interceptor:$OkhttpLogVersion"
+    implementation "com.google.code.gson:gson:$GsonVersion"
+    implementation "com.squareup.retrofit2:retrofit:$RetrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$RetrofitVersion"
+    implementation 'com.amazonaws:aws-android-sdk-core:2.2.+'
+
+    implementation 'com.amazonaws:aws-android-sdk-cognito:2.2.+'
+
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.2.+'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    implementation "com.google.dagger:dagger-android:$daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$daggerVersion"
+
+    // if you use the support libraries
+    annotationProcessor "com.google.dagger:dagger-android-processor:$daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-crash:16.2.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.firebaseui:firebase-ui-database:3.3.1'
+    implementation "org.greenrobot:eventbus:$eventbus"
+    implementation 'org.apache.commons:commons-lang3:3.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.android.support:appcompat-v7:+'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation 'com.google.code.gson:gson:2.6.1'
+    //implementation 'com.google.android.gms:play-services-plus:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-analytics:16.0.4'
+    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+ //   implementation 'com.google.android.gms:play-services-location:9.4.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+
+
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+   // implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'ru.alexbykov:nopaginate:0.9.9'
+
+
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+apply plugin: 'com.google.gms.google-services'

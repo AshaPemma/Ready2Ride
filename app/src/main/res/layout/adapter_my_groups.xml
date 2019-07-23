@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:weightSum="1">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:id="@+id/iv_group"
+            android:background="@drawable/ic_group_bike_bg"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:paddingBottom="@dimen/dimen_4"
+            android:background="@color/colorWhite">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iron Hounds"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tv_bike_name"
+                android:textSize="@dimen/text_size_12"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_bike_name"
+                android:layout_centerHorizontal="true"
+                android:textColor="#9B9B9B"
+                android:fontFamily="@font/arial"
+                android:id="@+id/tv_mem_count"
+                android:textSize="@dimen/text_size_10"
+                android:layout_marginTop="@dimen/dimen_5"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

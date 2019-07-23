@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:background="@color/colorDarkBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_marginLeft="@dimen/dimen_34"
+            android:text="Notifications"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_notifications"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_messages"
+            android:text="Messages"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="@dimen/dimen_34"
+            android:textSize="@dimen/text_size_16"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Notifications"
+        android:id="@+id/tv_no_notifications"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_16"
+        android:fontFamily="@font/arial"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_toolbar"
+        android:id="@+id/rv_items"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

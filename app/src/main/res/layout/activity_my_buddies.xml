@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:id="@+id/rl_toolbar"
+        android:background="@color/colorDarkBlue">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:text="Search"
+            android:fontFamily="@font/arial"
+            android:layout_toRightOf="@+id/iv_back"
+            android:id="@+id/et_search"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="@dimen/dimen_10"
+            android:background="@drawable/ic_blue_search_edit"/>
+
+
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_invite_buddy"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="Invite Buddies"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/rl_toolbar"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_buddies"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_below="@+id/btn_invite_buddy"
+        android:layout_marginLeft="@dimen/dimen_10"></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Buddies invited"
+        android:id="@+id/tv_no_buddies"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_20"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

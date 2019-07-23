@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_48"
+    android:paddingBottom="@dimen/dimen_20"
+    android:background="@color/colorWhite">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride Saved!"
+        android:fontFamily="@font/arialbd"
+        android:id="@+id/tv_ride_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_18"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/tv_text_saved"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="@dimen/dimen_8"
+       android:layout_below="@+id/tv_ride_name"
+       android:layout_marginRight="@dimen/dimen_15"
+       android:layout_marginLeft="@dimen/dimen_15"
+       android:gravity="center_horizontal"
+       android:fontFamily="@font/arial"
+       android:textSize="@dimen/text_size_12"
+       android:textColor="@color/colorBlack"
+       android:text="You can view this ride again from your profile."/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_34"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Ok"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:textStyle="bold"
+        android:id="@+id/btn_ok"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:layout_below="@+id/tv_text_saved"
+        android:textColor="@color/colorWhite"/>
+
+
+</RelativeLayout>

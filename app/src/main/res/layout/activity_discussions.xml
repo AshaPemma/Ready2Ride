@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:background="@color/colorDarkBlue">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:id="@+id/iv_back"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="Discussions"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Start New Discussion"
+        android:id="@+id/btn_start_new_discussion"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textColor="@color/colorWhite"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_discussions"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_below="@+id/btn_start_new_discussion"
+        android:layout_marginTop="@dimen/dimen_10"></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Discussions yet"
+        android:textSize="@dimen/text_size_20"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tv_no_discussion"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

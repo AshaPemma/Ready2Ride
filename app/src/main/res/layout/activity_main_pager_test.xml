@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_main_layout"
+        android:background="#293046">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_16"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_65">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_logo"
+                android:src="@drawable/ic_logo"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dimen_40"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_header_main"
+                android:text="Bike Stuff"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp"
+                android:visibility="gone"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_descp"
+                android:visibility="gone"
+                android:fontFamily="@font/arial"
+                android:text="Loreum ipsim dolor sit amet, consectituter adipscing edit. Sed volutpatligula quis sed volupati dabitat facilisisis"
+                android:textSize="@dimen/text_size_14"
+                android:layout_below="@+id/tv_header_main"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_24"
+                android:layout_marginLeft="@dimen/dimen_24"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:background="@drawable/ic_onboard1"
+        android:layout_height="wrap_content"
+        android:paddingBottom="?attr/actionBarSize"/>
+    <include layout="@layout/footer_control" />
+    </RelativeLayout>
+   <!--&lt;!&ndash;&ndash;&gt; <include layout="@layout/footer_control" />-->
+</android.support.design.widget.CoordinatorLayout>

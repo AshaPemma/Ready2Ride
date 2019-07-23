@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:background="@color/colorDarkBlue">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:id="@+id/ic_back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="Start Discussion"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_below="@+id/rl_toolbar"
+        android:id="@+id/tv_to"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:textColor="#7895B6"
+        android:fontFamily="@font/arial"
+        android:text="To: Iron Hounds"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/et_email"
+        android:hint="Discussion Title"
+        android:fontFamily="@font/arial"
+        android:background="@drawable/ic_input_bg"
+        android:layout_below="@+id/tv_to"
+        android:paddingLeft="@dimen/dimen_20"
+        android:textSize="@dimen/text_size_14"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_start_discus_bg"
+        android:layout_above="@id/btn_send"
+        android:layout_below="@+id/et_email"
+        android:id="@+id/rv_message"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_15">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Write a message..."
+        android:gravity="top"
+        android:id="@+id/et_message"
+        android:fontFamily="@font/arial"
+        android:background="@null"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_10"/>
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_gallery"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:id="@+id/iv_gallery"
+            android:layout_alignParentBottom="true"/>
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/et_message"
+            android:id="@+id/iv_upload_image"
+            android:layout_marginTop="@dimen/dimen_18"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="Send"
+    android:fontFamily="@font/arial"
+    android:textAllCaps="false"
+    android:id="@+id/btn_send"
+    android:background="@drawable/ic_rectangle_blue_btn_bg"
+    android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "85862604426",
+    "firebase_url": "https://ready2ridelatest.firebaseio.com",
+    "project_id": "ready2ridelatest",
+    "storage_bucket": "ready2ridelatest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85862604426:android:d34e95f4df6ade76",
+        "android_client_info": {
+          "package_name": "com.warrous.ready2ride"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85862604426-788s4ptbo71tdsh2r7q84lb4mogkkih1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClzJZdZAtDopPIisRzp5WLrZwqUUWmBNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85862604426-788s4ptbo71tdsh2r7q84lb4mogkkih1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "85862604426-5ea3lickg1ma2bvaa92g28qif524g0fb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Warrous-Pvt-ltd.Ready2Ride"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

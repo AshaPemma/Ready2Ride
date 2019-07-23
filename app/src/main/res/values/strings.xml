@@ -1,0 +1,116 @@
+<resources>
+
+    <string name="app_name">Ready2Ride</string>
+    <string name="purchase_date">Purchase\nDate:</string>
+    <string name="meet_ride">Meet &amp; Greet Ride</string>
+    <string name="promotion_events">Promotions &amp; Events</string>
+    <string name="home_dealership">You have not yet linked \n your dealership.</string>
+    <string name="home_bike">You have not yet created a \n bike profile.</string>
+
+    <!--<string name="default_web_client_id">85862604426-l1ie96kqsj7gbc0k72f596j1os745spu.apps.googleusercontent.com</string>-->
+
+    <string name="last_serviced">Last \nServiced:</string>
+Lorem ipsum dolor sit am <string name="lorem_ipsum">et, consectetur adipiscing elit. Sed volutpat ligula quis dapibus facilisis. In eu lobortis eros. Morbi rhoncus enim turpis, et consequat ligula viverra at. In hac habitasse platea dictumst. \n
+</string>
+    <string name="effects_how">
+        Effects how often your position \nis logged while tracking
+</string>
+    <string name="facebook_app_id">590596438031381</string>
+    <string name="fb_login_protocol_scheme">fb590596438031381</string>
+    <string-array name="reminder">
+    <item>1 week before</item>
+    <item>1 week after</item>
+    <item>2 weeks</item>
+    <item>3 weeks</item>
+    <item>4 weeks</item>
+    <item>5 weeks</item>
+    </string-array>
+
+    <string name="you_have_no">
+
+You have not yet linked your dealership.
+</string>
+
+    <string-array name="reminder_miles">
+        <item>100 miles before</item>
+        <item>200 miles before</item>
+        <item>300 miles before</item>
+        <item>400 miles before</item>
+        <item>500 miles before</item>
+        <item>600 miles before</item>
+    </string-array>
+    <string-array name="months">
+        <item>Months</item>
+        <item>Weeks</item>
+        <item>Days</item>
+
+    </string-array>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="friends_list">Show Friends List</string>
+    <string name="login_using_loginmanager">FB Login using LoginManager</string>
+    <string name="title_activity_fbfriends_list">FBFriendsListActivity</string>
+    <string name="success_login">Success Login</string>
+    <string name="user">"User = "</string>
+    <string name="token">"Token = "</string>
+    <string name="loginErrorMessage">Please Login</string>
+    <string name="server_client_id">821839882293-dfci0s7seta92nfdtelg2bd85ba8tt4k.apps.googleusercontent.com</string>
+    <string name="this_is_you">
+        This is your current odometer reading. You can update this manually for more accurate service alerts.
+</string>
+    <string name="don_t_ask_m">
+
+Dont ask me again
+</string>
+    <string name="msg_subscribed">Message Subscribed</string>
+    <string name="msg_subscribe_failed">Message Subscribe failed</string>
+    <string name="odometer_up">
+
+Odometer Update\nopted out
+</string>
+    <string name="you_can_opt">
+
+You can opt back in at anytime from your app settings.
+</string>
+
+
+    <string-array name="place_type">
+        <item>airport</item>
+        <item>atm</item>
+        <item>bank</item>
+        <item>bus_station</item>
+        <item>church</item>
+        <item>doctor</item>
+        <item>hospital</item>
+        <item>mosque</item>
+        <item>movie_theater</item>
+        <item>hindu_temple</item>
+        <item>restaurant</item>
+    </string-array>
+
+    <string-array name="place_type_name">
+        <item>Airport</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Bus Station</item>
+        <item>Church</item>
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Mosque</item>
+        <item>Movie Theater</item>
+        <item>Hindu Temple</item>
+        <item>Restaurant</item>
+    </string-array>
+
+    <string name="menu_settings">Settings</string>
+
+    <string name="title_activity_map_tracking">Map Route Tracking</string>
+    <string name="track_path_on_map">Walk and route your path on map</string>
+    <string name="permission_notice">Please note that your location permission is important if you want to draw your route on map while walking or running</string>
+    <string name="permission_title">Location Permission Denied</string>
+    <string name="cancel_permission_notice">Wow, please come back again when you need it and grant the permission</string>
+    <string name="Info">http://apiv1.ready2ride.bike/CycleMate.svc/</string>
+    <string name="details_event">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat ligula quis dapibus facilisis. In eu lobortis eros. Morbi rhoncus enim turpis, et consequat ligula viverra at. In hac habitasse platea dictumst.</string>
+    <string name="address">Brooklyn Indain Motorcycles \n123 Main St.Brooklyn, NY 10001</string>
+    <string name="offer_desc">For a limited time. Limit 1 per customer. Exclusions apply. All hemlets are not eligible for this promotion.Ecluded brands are Bell, Ducati, Vanguard and shoei. Expires 3/1/2019 at 12:00 AM EST</string>
+</resources>

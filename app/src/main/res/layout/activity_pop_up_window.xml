@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_5">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_select_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:gravity="center_horizontal"
+        android:text="Select Default Dealer"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_20" />
+        <TextView
+            android:id="@+id/tv_segment_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="My Dealerships"
+            android:layout_below="@+id/tv_select_category"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_18" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginLeft="@dimen/dimen_3"
+        android:layout_below="@+id/tv_segment_list">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_below="@+id/rv_categories"
+        android:background="@drawable/ic_button_blue"
+        android:text="Submit" />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

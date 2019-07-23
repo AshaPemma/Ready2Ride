@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:id="@+id/rl_toolbar"
+        android:background="@color/colorDarkBlue">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:hint="Search"
+            android:fontFamily="@font/arial"
+            android:textColorHint="@color/colorWhite"
+            android:layout_toRightOf="@+id/iv_back"
+            android:id="@+id/et_searchn"
+            android:textSize="@dimen/text_size_12"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="@dimen/dimen_10"
+            android:background="@drawable/ic_blue_search_edit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_skip"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_toRightOf="@+id/et_searchn"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:text="Invite Buddies"
+        android:textStyle="bold"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:id="@+id/btn_invite_buddies"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/ic_button_blue"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_people"
+        android:layout_below="@+id/btn_invite_buddies"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:fontFamily="@font/arial"
+        android:textSize="@dimen/text_size_10"
+        android:textColor="#9B9B9B"
+        android:text="People you may know"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_below="@+id/tv_people"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:id="@+id/rv_people_u_know">
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Featured Groups"
+            android:id="@+id/tv_featured_groups"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:fontFamily="@font/arial"
+            android:textSize="@dimen/text_size_10"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:textColor="#9B9B9B" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+
+            android:layout_marginTop="@dimen/dimen_5"
+            android:id="@+id/rv_featured_groups">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Featured Groups"
+            android:id="@+id/tv_no_featured_groups"
+            android:visibility="gone"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Featured Riders"
+            android:id="@+id/tv_featured_riders"
+            android:textSize="@dimen/text_size_10"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:textColor="#9B9B9B" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:id="@+id/rv_featured_riders">
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_no_featured_riders"
+            android:text="No Featured Rides"
+            android:fontFamily="@font/arial"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

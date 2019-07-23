@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_16"
+    android:paddingLeft="@dimen/dimen_16"
+    android:paddingRight="@dimen/dimen_16"
+    android:paddingTop="@dimen/dimen_65"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="@dimen/dimen_65"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/iv_logo"
+        android:src="@drawable/ic_logo"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_header_main"
+        android:text="Bike Stuff"
+        android:textColor="@color/colorWhite"
+        android:textSize="26sp"
+        android:visibility="gone"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_descp"
+        android:visibility="gone"
+        android:fontFamily="@font/arial"
+        android:text="Loreum ipsim dolor sit amet, consectituter adipscing edit. Sed volutpatligula quis sed volupati dabitat facilisisis"
+        android:textSize="@dimen/text_size_18"
+        android:layout_below="@+id/tv_header_main"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

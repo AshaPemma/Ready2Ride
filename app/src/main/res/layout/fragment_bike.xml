@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_dealership_bg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_bike_bg" />
+    <RelativeLayout
+        android:id="@+id/rl_dealer_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_dealership_bg"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@drawable/ic_bike_desc_bg">
+
+        <TextView
+            android:id="@+id/tv_dealer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:fontFamily="@font/arial"
+            android:gravity="center_horizontal"
+            android:text="Brooklyn Indain MotorCycle"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/rv_dots"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_dealer_name">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make"
+            android:id="@+id/tv_make"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_below="@+id/rv_dots"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:textColor="#9B9B9B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_model"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_below="@+id/rv_dots"
+            android:textColor="#9B9B9B"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:id="@+id/tv_year"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_below="@+id/rv_dots"
+            android:textColor="#9B9B9B"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indain"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_make_des"
+            android:ellipsize="end"
+            android:maxEms="5"
+            android:maxLines="1"
+            android:layout_below="@+id/tv_make"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="@dimen/dimen_15"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scout Bobber"
+            android:id="@+id/tv_model_desc"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxEms="7"
+            android:maxLines="1"
+            android:fontFamily="@font/arial"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@id/tv_make"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2005"
+            android:fontFamily="@font/arial"
+            android:layout_below="@+id/tv_make"
+            android:id="@+id/tv_year_des"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_5"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bike_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_dealer_desc"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@drawable/ic_bike_health_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rides"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_rides"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_18"
+            android:textColor="#9B9B9B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miles Ridden"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_miles_ridden"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Time"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_18"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rides"
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:id="@+id/tv_rides_des"
+            android:gravity="center_horizontal|center"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00K"
+            android:fontFamily="@font/arial"
+            android:layout_below="@id/tv_rides"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            android:id="@+id/tv_m_ridden"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:layout_below="@id/tv_rides"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:fontFamily="@font/arial"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            android:gravity="center_horizontal|center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:textColor="@color/colorBlack"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_vehicle_health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_bike_desc"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@drawable/ic_bike_health_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Health"
+            android:id="@+id/tv_vehicle_health"
+            android:textColor="#9B9B9B"
+            android:fontFamily="@font/arial"
+            android:layout_marginLeft="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_10" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Serviced"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healthy"
+            android:fontFamily="@font/arial"
+            android:textColor="#2ED32D"
+            android:layout_below="@id/tv_vehicle_health"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginLeft="@dimen/dimen_24"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28 days ago"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@id/tv_vehicle_health"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_24"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_manage_alerts"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:fontFamily="@font/arial"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_below="@id/rl_vehicle_health"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textColor="@color/colorWhite"
+        android:text="Manage Alerts"/>
+
+    <TextView
+        android:id="@+id/tv_promotion_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_manage_alerts"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:textSize="@dimen/text_size_10"
+        android:textColor="#9B9B9B"
+        android:text="Ride Log" />
+
+    <TextView
+        android:id="@+id/tv_see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_manage_alerts"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:text="See all" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tv_no_prom"
+        android:layout_below="@+id/tv_promotion_events"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_14"
+        android:layout_centerHorizontal="true"
+        android:text="No Rides"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_promotion_events"
+        android:id="@+id/rl_ride_log"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_10">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

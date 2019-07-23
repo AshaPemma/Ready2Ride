@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBlue">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:id="@+id/rl_toolbar">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gas Stations"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_below="@+id/rl_toolbar"
+        android:hint="Search"
+        android:textColorHint="@color/colorWhite"
+        android:fontFamily="@font/arial"
+        android:id="@+id/et_search"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/colorWhite"
+        android:paddingLeft="@dimen/dimen_10"
+        android:background="@drawable/ic_blue_search_edit"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_below="@+id/et_search">
+
+        <fragment
+            android:id="@+id/map_view"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:layout_marginTop="@dimen/dimen_10" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_map_items"
+            android:layout_height="0dp"
+            android:background="@color/colorWhite"
+            android:layout_weight="0.4">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Gas Stations"
+            android:id="@+id/tv_no_dealerships"
+            android:textSize="@dimen/text_size_14"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

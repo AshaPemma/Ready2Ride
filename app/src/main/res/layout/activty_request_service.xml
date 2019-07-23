@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:background="@color/colorDarkBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:id="@+id/tv_cancel"
+            android:fontFamily="@font/arial"
+            android:text="Cancel"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="Request Service"
+            android:fontFamily="@font/arial"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:id="@+id/rl_bike"
+        android:background="@drawable/ic_months_bg"
+        android:layout_below="@+id/rl_toolbar"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginBottom="7dp"  >
+        <Spinner
+            android:id="@+id/spiner_bike"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:fontFamily="@font/arial"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_15"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_traingle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_18"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:id="@+id/rl_service_type"
+        android:background="@drawable/ic_months_bg"
+        android:layout_below="@+id/rl_bike"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginBottom="7dp"  >
+        <Spinner
+            android:id="@+id/spiner_service_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@color/colorWhite"
+            android:paddingLeft="@dimen/dimen_15"
+            android:fontFamily="@font/arial"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_15"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_traingle"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_18"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_below="@+id/rl_service_type">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_input_bg"
+            android:layout_weight="0.4"
+            android:hint="MM/DD/YYYY"
+            android:fontFamily="@font/arial"
+            android:focusable="false"
+            android:drawableRight="@drawable/ic_calender"
+            android:paddingRight="@dimen/dimen_8"
+            android:id="@+id/et_pdate"
+            android:textSize="@dimen/text_size_12"
+            android:paddingLeft="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_marginTop="@dimen/dimen_10"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_40"
+            android:id="@+id/rl_available_time"
+            android:background="@drawable/ic_months_bg"
+            android:layout_below="@+id/rl_bike"
+            android:layout_weight="0.6"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="7dp"  >
+            <Spinner
+                android:id="@+id/spiner_available_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dimen_15"
+                android:fontFamily="@font/arial"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_15"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_traingle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_18"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentBottom="true"
+        android:background="#7895B6"
+        android:text="Book Appointment"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:id="@+id/btn_appointment"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

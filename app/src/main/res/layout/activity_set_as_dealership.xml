@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/btn_set_as_dealer"
+      android:id="@+id/ll_map"
+      android:orientation="vertical">
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="170dp"
+          android:id="@+id/iv_image_dealer"
+          android:background="@drawable/ic_bg_dealership"
+          android:layout_weight="0.25"/>
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:layout_below="@+id/iv_image_dealer"
+          android:id="@+id/iv_blank"
+          android:layout_weight="0.2"/>
+      <fragment
+          android:layout_width="match_parent"
+          android:id="@+id/mv_map"
+          android:name="com.google.android.gms.maps.SupportMapFragment"
+          android:layout_marginTop="-50dp"
+          android:layout_below="@+id/iv_blank"
+          android:layout_height="match_parent"
+          android:layout_weight="0.55"></fragment>
+      <!--<fragment-->
+          <!--android:id="@+id/map_view"-->
+          <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="0dp"-->
+          <!--android:layout_below="@+id/iv_blank"-->
+          <!--android:layout_marginTop="-50dp"-->
+          <!--android:layout_weight="0.55" />-->
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="170dp"
+          android:layout_marginRight="@dimen/dimen_30"
+          android:layout_marginLeft="@dimen/dimen_30"
+          android:layout_marginTop="-30dp"
+          android:background="@drawable/ic_background_dealershp_details"
+          android:layout_below="@+id/iv_image_dealer">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Brooklyn Indain MotorCycle"
+              android:id="@+id/tv_dealer_name"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="@dimen/dimen_5"
+              android:fontFamily="@font/arial"
+              android:textColor="@color/colorBlack"
+              android:textStyle="bold"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_adress"
+              android:fontFamily="@font/arial"
+              android:layout_below="@+id/tv_dealer_name"
+              android:layout_marginLeft="@dimen/dimen_15"
+              android:textColor="#9B9B9B"
+              android:textSize="@dimen/text_size_12"
+              android:text="Address"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_adress_desc"
+              android:fontFamily="@font/arial"
+              android:layout_below="@+id/tv_adress"
+              android:layout_marginLeft="@dimen/dimen_15"
+              android:textColor="@color/colorBlack"
+              android:textSize="@dimen/text_size_12"
+              android:text="123 MainSl"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_phone"
+              android:text="Phone"
+              android:fontFamily="@font/arial"
+              android:textSize="@dimen/text_size_12"
+              android:textColor="#9B9B9B"
+              android:layout_marginLeft="@dimen/dimen_15"
+              android:layout_below="@+id/tv_adress_desc"
+android:layout_marginTop="@dimen/dimen_5" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_phone_desc"
+              android:text="(212)555-5555"
+              android:textSize="@dimen/text_size_12"
+              android:fontFamily="@font/arial"
+              android:textColor="#4A90E2"
+              android:layout_marginLeft="@dimen/dimen_15"
+              android:layout_below="@+id/tv_phone"
+              android:layout_marginTop="@dimen/dimen_5" />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Website"
+              android:textColor="#9B9B9B"
+              android:fontFamily="@font/arial"
+              android:id="@+id/tv_website"
+              android:layout_below="@+id/tv_phone_desc"
+              android:layout_marginLeft="@dimen/dimen_15"
+              android:layout_marginTop="@dimen/dimen_5"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_website_desc"
+              android:text="http://websitename.com"
+              android:textSize="@dimen/text_size_12"
+              android:fontFamily="@font/arial"
+              android:textColor="#4A90E2"
+              android:layout_marginLeft="@dimen/dimen_15"
+              android:layout_below="@+id/tv_website"/>
+
+
+
+      </RelativeLayout>
+
+  </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_set_as_dealer"
+        android:text="Set as Default Dealership"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:background="#7895B6"/>
+
+</RelativeLayout>

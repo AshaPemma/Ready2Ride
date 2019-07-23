@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:id="@+id/iv_home"
+        android:src="@drawable/ic_oval_photo"
+        android:layout_marginTop="@dimen/dimen_15"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_home"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:id="@+id/tv_name"
+            android:fontFamily="@font/arial"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:textColor="#7895B6"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:id="@+id/tv_desc"
+          android:layout_below="@+id/tv_name"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:layout_marginTop="@dimen/dimen_8"
+          android:paddingLeft="@dimen/dimen_3"
+          android:layout_marginRight="@dimen/dimen_10"
+          android:gravity="center_horizontal"
+          android:fontFamily="@font/arial"
+          android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1h"
+            android:fontFamily="@font/arial"
+            android:textColor="#9B9B9B"
+            android:id="@+id/tv_hour"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_desc"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:paddingLeft="@dimen/dimen_3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_24"
+            android:background="@drawable/ic_notification_bg"
+            android:text="Reject"
+            android:fontFamily="@font/arial"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:id="@+id/btn_reject"
+            android:layout_below="@+id/tv_hour"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_24"
+            android:background="@drawable/ic_accept_bg"
+            android:layout_toRightOf="@+id/btn_reject"
+            android:layout_marginLeft="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:id="@+id/btn_accept"
+            android:text="Accept"
+            android:fontFamily="@font/arial"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/tv_hour"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/btn_reject"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background=" #CCCCCC"></View>
+    </RelativeLayout>
+
+
+</RelativeLayout>

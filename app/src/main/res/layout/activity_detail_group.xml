@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_dealership_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/ic_dealership_background" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:id="@+id/iv_back"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_28"/>
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="0.7">-->
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_dealership_bg"
+        android:background="@color/colorWhite"></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_dealer_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_dealership_bg"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="-30dp"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@drawable/ic_bike_desc_bg">
+        <TextView
+            android:id="@+id/tv_dealer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:fontFamily="@font/arial"
+            android:gravity="center_horizontal"
+            android:text="Iron Hounds"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dealer_name"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="Description"
+            android:fontFamily="@font/arial"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_adress_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_adress"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:fontFamily="@font/arial"
+            android:text="Lorieum ipsum donor sit amet, consectetur adipsing elit. Sed volupat liquigala quisis facilis"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_10" />
+
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_adress_desc"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="Leave Group"
+            android:fontFamily="@font/arial"
+            android:layout_centerHorizontal="true"
+            android:textColor="#7895B6"
+            android:textSize="@dimen/text_size_12" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_promotion_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_dealer_desc"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:textSize="@dimen/text_size_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:fontFamily="@font/arial"
+        android:textColor="#9B9B9B"
+        android:text="Members(0)" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_members"
+        android:layout_below="@+id/tv_promotion_events"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Members"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/colorBlack"
+        android:visibility="gone"
+        android:fontFamily="@font/arial"
+        android:id="@+id/tv_no_members"
+        android:layout_below="@+id/tv_promotion_events"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest Discussion"
+        android:textColor="#9B9B9B"
+        android:id="@+id/tv_latest_discussion"
+        android:layout_below="@+id/rv_members"
+        android:textSize="@dimen/text_size_10"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_15"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See all"
+        android:textColor="#7895B6"
+        android:fontFamily="@font/arial"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_see_all"
+        android:layout_below="@+id/rv_members"
+        android:textSize="@dimen/text_size_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_15"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_latest_discussions"
+        android:layout_below="@+id/tv_latest_discussion"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Discussions yet"
+        android:visibility="gone"
+        android:id="@+id/tv_discusion"
+        android:layout_below="@+id/tv_latest_discussion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_rectangle_blue_btn_bg"
+        android:text="Start New Discussion"
+        android:id="@+id/btn_start_new_discussion"
+        android:layout_below="@+id/tv_discusion"
+        android:layout_marginRight="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

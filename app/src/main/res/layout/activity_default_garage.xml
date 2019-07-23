@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBlue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75"
+        android:id="@+id/rl_toolbar">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:id="@+id/iv_back"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garage"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            android:fontFamily="@font/arial"
+            android:layout_marginBottom="@dimen/dimen_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_skip_tour"
+            android:text="Skip"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_horizantal"
+        android:id="@+id/iv_horizantal"
+        android:layout_centerHorizontal="true"
+       android:layout_below="@+id/rl_toolbar"
+        android:layout_marginTop="@dimen/dimen_10"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background=" #414A66"
+        android:id="@+id/btn_set_bike"
+        android:fontFamily="@font/arial"
+        android:textAllCaps="false"
+        android:text="Set up your bike"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/iv_bike_pf"
+        android:src="@drawable/ic_bike_background"
+        android:layout_below="@+id/iv_horizantal"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/iv_bike_pf"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:fontFamily="@font/arial"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:text="Loreum ipsim dolor sit amet, consectituter adipscing edit. Sed volutpatligula quis sed volupati dabitat facilisisis"/>
+
+</RelativeLayout>

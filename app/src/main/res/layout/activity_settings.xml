@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_15">
+            <RelativeLayout
+                android:id="@+id/rl_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_65"
+                android:background="@color/colorDarkBlue">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:id="@+id/iv_back"
+                    android:layout_marginBottom="@dimen/dimen_15"
+                    android:src="@drawable/ic_back" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimen_15"
+                    android:text="Settings"
+                    android:fontFamily="@font/arial"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_16" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_toolbar"
+                android:text="App"
+                android:id="@+id/tv_app"
+                android:textColor="#9B9B9B"
+                android:fontFamily="@font/arial"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textSize="@dimen/text_size_10"
+                android:layout_marginTop="@dimen/dimen_10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Units"
+                android:textSize="@dimen/text_size_14"
+                android:fontFamily="@font/arial"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_app"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miles"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:id="@+id/tv_miles"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_below="@+id/tv_app"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view1"
+                android:layout_below="@+id/tv_miles"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share my location with friends"
+                android:layout_below="@+id/view1"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="@dimen/dimen_14"/>
+            <ToggleButton
+                android:id="@+id/tb_share_location"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/view1"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/toggle_button_background" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view2"
+                android:layout_below="@+id/tb_share_location"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracking"
+                android:fontFamily="@font/arial"
+                android:id="@+id/tv_tracking"
+                android:textColor="#9B9B9B"
+                android:layout_below="@+id/view2"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_odometer_updates"
+                android:text="Odometer Updates"
+                android:layout_below="@+id/tv_tracking"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/colorBlack"/>
+
+            <ToggleButton
+                android:id="@+id/tb_odometer_updates"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/tv_tracking"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/toggle_button_background" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view3"
+                android:layout_below="@+id/tb_odometer_updates"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_gps_logging_frequency"
+                android:text="GPS Logging Frequency"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:layout_below="@+id/view3"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_gps_desc"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/arial"
+                android:layout_below="@+id/tv_gps_logging_frequency"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="@string/effects_how"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aggressive"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/tv_gps_logging_frequency"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/arial"
+                android:layout_marginRight="@dimen/dimen_10"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view4"
+                android:layout_below="@+id/tv_gps_desc"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_notifications"
+                android:text="Notifications"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textColor="#9B9B9B"
+                android:layout_below="@+id/view4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friend Requests"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:layout_below="@+id/tv_notifications"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <ToggleButton
+                android:id="@+id/tb_friend_requests"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/tv_notifications"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:checked="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/toggle_button_background" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view5"
+                android:layout_below="@+id/tb_friend_requests"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accepted Friend Requests"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:layout_below="@+id/view5"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <ToggleButton
+                android:id="@+id/tb_accepted_friend_requests"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/view5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:checked="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/toggle_button_background" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view6"
+                android:layout_below="@+id/tb_accepted_friend_requests"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buddies who join R2R"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_below="@+id/view6"
+                android:fontFamily="@font/arial"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <ToggleButton
+                android:id="@+id/tb_buddies_join"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/view6"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:checked="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/toggle_button_background" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view7"
+                android:layout_below="@+id/tb_buddies_join"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direct Messages"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:layout_below="@+id/view7"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <ToggleButton
+                android:id="@+id/tb_direct_messages"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/view7"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:checked="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/toggle_button_background" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view8"
+                android:layout_below="@+id/tb_direct_messages"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promotion Alerts"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_below="@+id/view8"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:fontFamily="@font/arial"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <ToggleButton
+                android:id="@+id/tb_promotion_alerts"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/view8"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:checked="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/toggle_button_background" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view9"
+                android:layout_below="@+id/tb_promotion_alerts"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:fontFamily="@font/arial"
+                android:id="@+id/tv_account"
+                android:layout_below="@+id/view9"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textColor="#9B9B9B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private Profile"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:layout_below="@+id/tv_account"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <ToggleButton
+                android:id="@+id/tb_private_profile"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/tv_account"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:checked="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/toggle_button_background" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view10"
+                android:layout_below="@+id/tb_private_profile"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:layout_below="@+id/view10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <ToggleButton
+                android:id="@+id/tb_facebook"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/view10"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:checked="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/toggle_button_background" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view11"
+                android:layout_below="@+id/tb_facebook"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google"
+                android:fontFamily="@font/arial"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_below="@+id/view11"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <ToggleButton
+                android:id="@+id/tb_google"
+                android:textOff=""
+                android:textOn=""
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_below="@+id/view11"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:checked="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/toggle_button_background" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view12"
+                android:layout_below="@+id/tb_google"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:id="@+id/tv_change_pwd"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:layout_below="@+id/view12"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view13"
+                android:layout_below="@+id/tv_change_pwd"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log out"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/arial"
+                android:id="@+id/tv_logout"
+                android:layout_below="@+id/view13"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view14"
+                android:layout_below="@+id/tv_logout"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background=" #CCCCCC"></View>
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
